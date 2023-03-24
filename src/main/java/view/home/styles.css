@@ -1,0 +1,118 @@
+.window{
+     -fx-background-color: #121212;
+}
+
+.updateButton, .modalButtonClose{
+    -fx-text-fill: rgba(255,255,255,0.6);
+    -fx-background-color: #121212;
+    -fx-border-color: rgba(255,255,255,0.6);
+    -fx-border-width: 1;
+    -fx-font-size: 10pt;
+}
+
+.updateButton:hover, .modalButtonClose:hover{
+    -fx-text-fill: #ea4335;
+    -fx-border-color: #ea4335;
+}
+
+.lastUpdated, .lastUpdatedValue{
+    -fx-text-fill: rgba(255,255,255,0.6);
+    -fx-font-size: 10pt;
+}
+
+.titleContainer{
+    //-fx-background-color: #d39;
+}
+
+.title{
+    -fx-font-weight: 900;
+    -fx-font-size: 20pt;
+     -fx-text-fill: #ea4335;
+}
+
+.container{
+    //-fx-background-color: #df3079;
+}
+
+.card{
+    -fx-background-color: #373737;
+    -fx-padding: 10;
+    -fx-border-color: #373737;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.4), 15, 0.15, 0, 0);
+}
+
+.card:hover{
+    -fx-border-color: rgba(255,255,255,0.4);
+
+}
+
+.comboBox, .input{
+    -fx-background-color: #373737;
+    -fx-border-color: #fff;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #fff;
+    -fx-font-weight: 700;
+    -fx-align-text: center;
+    -fx-font-size: 10pt;
+}
+
+.input{
+    -fx-text-fill: rgba(255,255,255,0.6);
+    -fx-border-width: 0 0 1 0;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #fff;
+    -fx-background-color: #373737;
+}
+
+.combo-box .list-cell:selected {
+     -fx-text-fill: #ea4335;
+}
+
+.code{
+    -fx-font-weight: 900;
+    -fx-font-size: 30pt;
+    -fx-text-fill: #fff;
+}
+
+.codeSubText{
+    -fx-font-weight: 400;
+    -fx-font-size: 10pt;
+    -fx-text-fill: rgba(255,255,255,0.6);
+}
+
+.equals{
+    -fx-font-weight: 900;
+    -fx-font-size: 60pt;
+    -fx-text-fill: #373737;
+    -fx-background-color: #121212;
+}
+
+.equals:hover, .code:hover{
+    -fx-text-fill: #ea4335;
+}
+
+.modalContainer{
+    -fx-background-color: rgba(255,255,255,0.2);
+}
+
+.modal{
+    -fx-background-color: #121212;
+    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.4), 15, 0.15, 0, 0);
+}
+
+.modalTextIcon{
+    -fx-font-weight: 900;
+    -fx-font-size: 30pt;
+    -fx-text-fill: #0cbc8b;
+}
+
+.modalText{
+    -fx-font-weight: 700;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #fff;
+}

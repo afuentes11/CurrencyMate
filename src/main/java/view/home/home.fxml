@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.java.view.home.Home"
+            prefHeight="450.0" prefWidth="700.0"
+            stylesheets="@styles.css"
+            fx:id="myAnchorPane"
+            styleClass="window">
+
+
+    <HBox styleClass="titleContainer" prefHeight="80.0" prefWidth="${myAnchorPane.width}" alignment="CENTER">
+
+        <Label fx:id="title" styleClass="title" text="CurrencyMate" />
+    </HBox >
+
+    <HBox fx:id="updateButtonContainer" styleClass="updateButtonContainer" prefHeight="80.0"  alignment="CENTER_LEFT" AnchorPane.leftAnchor="60">
+        <Button fx:id="updateButton" styleClass="updateButton" text=" Update exchange" onAction="#handlerUpdateExchange" prefHeight="20"></Button>
+    </HBox>
+
+    <VBox prefHeight="80.0" prefWidth="140" alignment="CENTER_RIGHT" AnchorPane.rightAnchor="60">
+        <Label fx:id="lastUpdated" styleClass="lastUpdated" text="last updated at" />
+        <Label fx:id="lastUpdatedValue" styleClass="lastUpdatedValue" text="" />
+    </VBox>
+    <GridPane fx:id="container" styleClass="container" AnchorPane.topAnchor="80" AnchorPane.bottomAnchor="0" prefWidth="${myAnchorPane.width}" alignment="CENTER" hgap="5" vgap="5">
+        <GridPane styleClass="card" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="3" alignment="CENTER" vgap="60">
+            <ComboBox fx:id="comboBox1" styleClass="comboBox" onAction="#handlerComboBox" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="${input1.width}">
+
+            </ComboBox>
+
+            <VBox styleClass="codeContainer" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER" >
+                <Label fx:id="code1" styleClass="code" text="" />
+                <Label fx:id="code1SubText" styleClass="codeSubText" text="" />
+            </VBox>
+
+            <TextField fx:id="input1" styleClass="input" onAction="#handlerTextField" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER">
+
+            </TextField>
+        </GridPane>
+
+        <HBox styleClass="equalsContainer" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.rowSpan="3" alignment="CENTER">
+            <Button fx:id="equals" styleClass="equals" text="=" onAction="#handlerResult"/>
+        </HBox>
+
+        <GridPane styleClass="card" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="3" alignment="CENTER" vgap="60">
+            <ComboBox fx:id="comboBox2" styleClass="comboBox" onAction="#handlerComboBox" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="${input1.width}" >
+
+            </ComboBox>
+
+            <VBox styleClass="codeContainer" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER">
+                <Label fx:id="code2" styleClass="code" text="" />
+                <Label fx:id="code2SubText" styleClass="codeSubText" text="" />
+            </VBox>
+
+            <TextField fx:id="input2" styleClass="input" onAction="#handlerTextField" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER">
+
+            </TextField>
+        </GridPane>
+    </GridPane>
+
+    <GridPane fx:id="modalContainer" styleClass="modalContainer" prefWidth="${myAnchorPane.width}" prefHeight="${myAnchorPane.height}" alignment="CENTER">
+        <AnchorPane fx:id="modal" styleClass="modal"  prefWidth="340" prefHeight="200">
+            <GridPane  prefWidth="340" prefHeight="200" alignment="CENTER" hgap="10" vgap="10">
+                <Label fx:id="modalTextIcon" styleClass="modalTextIcon" GridPane.columnIndex="0" GridPane.rowIndex="0" text="" alignment="CENTER" prefWidth="${modal.width}"></Label>
+                <Label fx:id="modalText" styleClass="modalText" GridPane.columnIndex="0" GridPane.rowIndex="1" text="" alignment="CENTER" prefWidth="${modal.width}"></Label>
+            </GridPane>
+
+            <Button fx:id="modalButtonClose" styleClass="modalButtonClose" onAction="#handlerCloseModal" text="close" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10" ></Button>
+        </AnchorPane>
+    </GridPane>
+
+
+</AnchorPane>

@@ -1,0 +1,20 @@
+# Java build output
+target/
+out/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# NetBeans files
+/nbproject/
+/build/
+
+doc/
