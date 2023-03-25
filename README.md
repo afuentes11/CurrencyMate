@@ -24,7 +24,7 @@ Por ultimo, la interfaz fue construida con [JavaFX](https://openjfx.io/), un con
 </div>
 
 
-## Environment Variables
+## Variables de entrono
 
 Para ejecutar este proyecto, deberá añadir las siguientes variables de entorno
 
@@ -43,3 +43,8 @@ Para obtener una API_KEY es necesario registrarse en [currencyapi](https://curre
  - MVC
  - Manejo de API's
 
+## Contacto
+
+- GitHub [@afuentes11](https://github.com/afuentes11)
+- Linkedin [andresfelipefuentes](https://www.linkedin.com/in/andresfuentesmartinez/)
+- DevChallenges.io [afuentes11](https://devchallenges.io/portfolio/afuentes11)
